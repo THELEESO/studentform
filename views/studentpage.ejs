@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= data.name %></title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Student ID</th>
+        <td><%= data.id %></td>
+      </tr>
+      <tr>
+        <th>Student Name</th>
+        <td><%= data.name %></td>
+      </tr>
+      <tr>
+        <th>Student Age</th>
+        <td><%= data.age %></td>
+      </tr>
+      <tr>
+        <th>Merit</th>
+        <td><%= data.scholarship.merit %></td>
+      </tr>
+      <tr>
+        <th>Other</th>
+        <td><%= data.scholarship.other %></td>
+      </tr>
+      <tr>
+        <th>Total scholarship</th>
+        <td><%= data.scholarship.merit + data.scholarship.other %></td>
+      </tr>
+    </table>
+    <a href="/students">Go back!!</a>
+    <a href="/students/insert">Insert</a>
+  </body>
+</html>
